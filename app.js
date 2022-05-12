@@ -25,9 +25,7 @@ function handleSubmitForm(e){
 
 function weatherCoordinates( w1, w2){
     const lat = w1;
-    console.log(lat)
     const lng = w2;
-    console.log(lng)
     const api = 'cd4b1161b30cad90e97b8468d63dcc35';
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&units=metric&lang=es&appid=${api}`)
@@ -54,9 +52,5 @@ function addWeather(weather){
 
     document.querySelector('.lat').value = ''
     document.querySelector('.long').value = ''
-
-}
-
-function clearAll(){
 
 }
